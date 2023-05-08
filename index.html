@@ -3,7 +3,16 @@
 <style type="text/css">
 
 
-
+  .content {
+	flex-grow: 1;
+/* 	flex: 1; */
+	/* flex: auto;*/
+}
+ 
+ .foot{
+  background: #000;
+  color: #fff
+}
   .title {
    
    background: linear-gradient(to right,#117766, #eeeeee);
@@ -50,7 +59,9 @@
    text-align: center;
    background-color: #222222;
    background-image: linear-gradient(to bottom right, black 25%, #117766 200%);
-   flex: 1; // 高度自動伸展至所有剩餘的空間
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
    }
@@ -59,9 +70,7 @@
 </head>
 <div class="container">
 <body style="color:#eeeeee">
- <div class="page-container">
-   <div class="content-wrap">
-     <!-- all other page content -->
+  <div class="content">
     
     
 <h1>
@@ -87,6 +96,10 @@
  <!--<p>—　<a href="https://space.bilibili.com/1504974356" target="_blank">Bilibili</a>　—</p>-->
 </big>
 
-</body>
-    
-    <footer>hello<footer>
+</div>
+   <div class="foot">
+      <p>footer</p>
+   </div>
+
+ </body>
+   
